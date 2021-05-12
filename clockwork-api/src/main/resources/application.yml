@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: ADX-CLOCKWORK-API
+
+server.port: 9005
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 600000
+
+ribbon:
+  ReadTimeout: 600000
+  ConnectTimeout: 5000
+
+ribbon.eureka.enable: true
+

@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: ADX-CLOCKWORK-DFS
+
+server.port: 9007
+
+spring.dfs.enable: HDfsService
+active.namenode.cache.timeout: 60000
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 600000
+
+ribbon:
+  ReadTimeout: 600000
+  ConnectTimeout: 5000
+
+
+# 上传文件大小限制
+spring.http.multipart:
+  maxFileSize: 100Mb
+  maxRequestSize: 100Mb

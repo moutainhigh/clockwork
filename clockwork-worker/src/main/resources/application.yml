@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: ADX-CLOCKWORK-WORKER
+
+server.port: 9008
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 600000
+
+ribbon:
+  ReadTimeout: 600000
+  ConnectTimeout: 5000
+
+
