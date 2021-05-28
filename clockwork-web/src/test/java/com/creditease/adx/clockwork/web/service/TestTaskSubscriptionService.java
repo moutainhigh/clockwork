@@ -33,8 +33,8 @@ public class TestTaskSubscriptionService {
         pojo.setTaskId(12191);
         pojo.setSubscriptionTime(new Date());
         pojo.setUserName("xuandongtang");
-        pojo.setUserEmail("xuandongtang@creditease.cn");
-        pojo.setMobileNumber("15826008619");
+        pojo.setUserEmail("xuandongtang@clockwork.com");
+        pojo.setMobileNumber("15800000000");
         System.out.println(taskSubscriptionService.addTaskSubscription(pojo));
 
 
